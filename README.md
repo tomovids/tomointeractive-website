@@ -25,13 +25,10 @@ npx serve .
 
 These are placeholders — search for `TODO` in `index.html`.
 
-1. **Selected work** — three placeholder project cards in the `#work` section.
-   Replace the name, tag and description, and swap each
-   `<div class="work-thumb">…</div>` for `<img src="assets/work-1.jpg" alt="…">`.
-2. **Company details** — the footer needs your Companies House registration
+1. **Company details** — the footer needs your Companies House registration
    number and registered address. UK limited companies are legally required to
    show the registered name, number, and registered office address on their website.
-3. **Social preview** — `assets/og-image.png` is generated and ready, but
+2. **Social preview** — `assets/og-image.png` is generated and ready, but
    regenerate it if the tagline changes.
 
 ## Contact form

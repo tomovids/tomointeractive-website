@@ -122,4 +122,3 @@ in your Netlify dashboard, replacing the mailto fallback.
 - [ ] Paste the URL into a Slack/Discord message to check the social preview card
 - [ ] Add the Companies House number + registered address to the footer (legally
       required for a UK limited company)
-- [ ] Replace the three placeholder project cards in the `#work` section
