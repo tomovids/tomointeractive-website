@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tomo Interactive — Apps, Games &amp; Software Development</title>
+<meta name="description" content="Tomo Interactive LTD is a software studio building mobile apps, games and custom software. Design-led engineering, shipped end to end.">
+<meta name="theme-color" content="#0b0c10">
+<link rel="canonical" href="https://tomointeractive.com/">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tomointeractive.com/">
+<meta property="og:title" content="Tomo Interactive — Apps, Games &amp; Software Development">
+<meta property="og:description" content="A software studio building mobile apps, games and custom software. Design-led engineering, shipped end to end.">
+<meta property="og:image" content="https://tomointeractive.com/assets/og-image.png">
+<meta property="og:site_name" content="Tomo Interactive">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tomo Interactive — Apps, Games &amp; Software Development">
+<meta name="twitter:description" content="A software studio building mobile apps, games and custom software.">
+<meta name="twitter:image" content="https://tomointeractive.com/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tomo Interactive LTD",
+  "alternateName": "Tomo Interactive",
+  "url": "https://tomointeractive.com",
+  "logo": "https://tomointeractive.com/assets/favicon.svg",
+  "description": "Software studio building mobile apps, games and custom software.",
+  "email": "contact@tomointeractive.com"
+}
+</script>
+<!-- Set theme + flag JS before paint: avoids a theme flash, and keeps the
+     page fully visible if scripting is unavailable (see .js .reveal in CSS) -->
+<script>
+(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('ti-theme');if(t)d.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Tomo Interactive home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="var(--accent)"/>
+            <stop offset="100%" stop-color="var(--accent-2)"/>
+          </linearGradient>
+        </defs>
+        <rect x="1" y="1" width="30" height="30" rx="9" fill="url(#bg1)"/>
+        <path d="M8.5 11h15M16 11v13" stroke="#0b0c10" stroke-width="3.1" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">Tomo<span class="brand-thin">Interactive</span></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a class="btn btn-sm btn-primary nav-cta" href="#contact">Start a project</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch colour theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2.5 12h2.6M18.9 12h2.6M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8.2 8.2 0 019.8 4a8.4 8.4 0 102 10.2 8.2 8.2 0 018.2 0z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span class="menu-bar"></span><span class="menu-bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ───────────────────────── Hero ───────────────────────── -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="glow glow-a"></div>
+      <div class="glow glow-b"></div>
+      <div class="grid-lines"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">Tomo Interactive LTD — Software Studio</p>
+      <h1 class="hero-title reveal" data-delay="1">
+        We build <span class="accent-text">apps</span>, <span class="accent-text">games</span><br>
+        and software that ships.
+      </h1>
+      <p class="hero-sub reveal" data-delay="2">
+        An independent studio turning ideas into polished products — from first sketch
+        to store launch and everything that keeps it running afterwards.
+      </p>
+      <div class="hero-actions reveal" data-delay="3">
+        <a class="btn btn-primary" href="#contact">Start a project</a>
+        <a class="btn btn-ghost" href="#work">See our work <span class="arrow">→</span></a>
+      </div>
+
+      <ul class="hero-pills reveal" data-delay="4">
+        <li>Mobile &amp; Web Apps</li>
+        <li>Game Development</li>
+        <li>Custom Software</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Services ───────────────────────── -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">What we do</span>
+        <h2>Three disciplines, one team.</h2>
+        <p class="section-lede">
+          We keep design, engineering and release under one roof, so nothing gets lost
+          in the handover between them.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.6 18.4h2.8"/></svg>
+          </div>
+          <h3>Mobile &amp; Web Apps</h3>
+          <p>
+            Native and cross-platform products built to feel fast and considered —
+            iOS, Android and the web, from prototype through to the app stores.
+          </p>
+          <ul class="card-list">
+            <li>iOS &amp; Android</li>
+            <li>Progressive web apps</li>
+            <li>Backends &amp; APIs</li>
+          </ul>
+        </article>
+
+        <article class="card reveal" data-delay="1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.4 7.5h9.2a4 4 0 013.9 3.1l.9 4.2a2.7 2.7 0 01-4.9 2.1l-1.1-1.6H8.6l-1.1 1.6a2.7 2.7 0 01-4.9-2.1l.9-4.2a4 4 0 013.9-3.1z"/><path d="M7.2 11.6v2.2M6.1 12.7h2.2M15.6 12h.01M17.9 13.6h.01"/></svg>
+          </div>
+          <h3>Game Development</h3>
+          <p>
+            Playable ideas built in Unity and shipped to PC, mobile and console —
+            gameplay systems, tooling, art pipelines and live updates.
+          </p>
+          <ul class="card-list">
+            <li>Unity &amp; real-time 3D</li>
+            <li>Gameplay &amp; systems design</li>
+            <li>Porting &amp; optimisation</li>
+          </ul>
+        </article>
+
+        <article class="card reveal" data-delay="2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.2 8.2L5.4 12l3.8 3.8M14.8 8.2L18.6 12l-3.8 3.8M13.1 5.9l-2.2 12.2"/></svg>
+          </div>
+          <h3>Custom Software</h3>
+          <p>
+            Internal tools, platforms and integrations tailored to how your business
+            actually works — replacing the spreadsheet held together with hope.
+          </p>
+          <ul class="card-list">
+            <li>Bespoke platforms</li>
+            <li>Automation &amp; integrations</li>
+            <li>Cloud &amp; infrastructure</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Work ───────────────────────── -->
+  <section class="section section-alt" id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Selected work</span>
+        <h2>Products we've put into the world.</h2>
+        <p class="section-lede">
+          A look at what we've been building lately.
+        </p>
+      </div>
+
+      <!-- TODO: Replace these three placeholders with real projects.
+           Swap the .work-thumb div for <img src="assets/work-1.jpg" alt="…"> when you have screenshots. -->
+      <div class="work-grid">
+        <article class="work-card reveal">
+          <div class="work-thumb" data-label="01"><span>Project image</span></div>
+          <div class="work-body">
+            <span class="work-tag">Game</span>
+            <h3>Project name</h3>
+            <p>One or two lines on what it is, who it was for, and what you built.</p>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-delay="1">
+          <div class="work-thumb" data-label="02"><span>Project image</span></div>
+          <div class="work-body">
+            <span class="work-tag">Mobile app</span>
+            <h3>Project name</h3>
+            <p>One or two lines on what it is, who it was for, and what you built.</p>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-delay="2">
+          <div class="work-thumb" data-label="03"><span>Project image</span></div>
+          <div class="work-body">
+            <span class="work-tag">Software</span>
+            <h3>Project name</h3>
+            <p>One or two lines on what it is, who it was for, and what you built.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Process ───────────────────────── -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">How we work</span>
+        <h2>A process without the theatre.</h2>
+        <p class="section-lede">
+          Short feedback loops, working software early, and no surprises at the end.
+        </p>
+      </div>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-num">01</span>
+          <h3>Discover</h3>
+          <p>We pin down the problem, the users and the constraints before a line of code exists.</p>
+        </li>
+        <li class="step reveal" data-delay="1">
+          <span class="step-num">02</span>
+          <h3>Design</h3>
+          <p>Flows, prototypes and interface work you can click through and react to.</p>
+        </li>
+        <li class="step reveal" data-delay="2">
+          <span class="step-num">03</span>
+          <h3>Build</h3>
+          <p>Tested, reviewed code delivered in visible increments — you see progress weekly.</p>
+        </li>
+        <li class="step reveal" data-delay="3">
+          <span class="step-num">04</span>
+          <h3>Launch &amp; support</h3>
+          <p>Store submission, release, monitoring, and the updates that come after day one.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── About ───────────────────────── -->
+  <section class="section section-alt" id="about">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <span class="section-tag">About the studio</span>
+        <h2>Small team. Serious craft.</h2>
+        <p>
+          Tomo Interactive is an independent software studio. We take on a small number
+          of projects at a time so the people you meet are the people who build your product.
+        </p>
+        <p>
+          We care about the parts users never see — the architecture, the tests, the build
+          pipeline — because that's what makes the parts they <em>do</em> see feel effortless.
+        </p>
+        <a class="btn btn-ghost" href="#contact">Work with us <span class="arrow">→</span></a>
+      </div>
+
+      <ul class="values reveal" data-delay="1">
+        <li>
+          <h3>Own the outcome</h3>
+          <p>We're accountable for a product that works, not a list of tickets closed.</p>
+        </li>
+        <li>
+          <h3>Clear over clever</h3>
+          <p>Plain updates, honest timelines, and code the next developer can read.</p>
+        </li>
+        <li>
+          <h3>Built to last</h3>
+          <p>We write software you can still extend two years from now.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Contact ───────────────────────── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-panel reveal">
+        <div class="contact-copy">
+          <span class="section-tag">Get in touch</span>
+          <h2>Tell us what you're building.</h2>
+          <p>
+            Send over the idea, the rough shape of it, or just a question. We reply to
+            every enquiry, usually within one working day.
+          </p>
+          <a class="contact-email" href="mailto:contact@tomointeractive.com">contact@tomointeractive.com</a>
+        </div>
+
+        <!-- Form posts nowhere until you connect a handler — see README.md -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="project">What can we help with?</label>
+            <select id="project" name="project">
+              <option>Mobile or web app</option>
+              <option>Game development</option>
+              <option>Custom software</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Send enquiry</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="#top" aria-label="Tomo Interactive home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="30" height="30" rx="9" fill="url(#bg1)"/>
+          <path d="M8.5 11h15M16 11v13" stroke="#0b0c10" stroke-width="3.1" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">Tomo<span class="brand-thin">Interactive</span></span>
+      </a>
+      <p class="footer-tag">Apps, games and software, built end to end.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h4>Studio</h4>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:contact@tomointeractive.com">contact@tomointeractive.com</a>
+        <a href="#contact">Start a project</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container footer-bottom">
+    <!-- TODO: add your Companies House registration number and registered address -->
+    <p>&copy; <span id="year">2026</span> Tomo Interactive LTD. All rights reserved.</p>
+    <p class="footer-legal">Registered in England &amp; Wales.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
