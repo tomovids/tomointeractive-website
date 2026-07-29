@@ -26,7 +26,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<!-- ?v= is a cache buster. GitHub Pages serves assets with max-age=600, so a
+     browser can hold an old stylesheet against new HTML. Bump this version
+     whenever styles.css or main.js changes. -->
+<link rel="stylesheet" href="styles.css?v=2">
 
 <script type="application/ld+json">
 {
@@ -305,6 +308,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js?v=2"></script>
 </body>
 </html>

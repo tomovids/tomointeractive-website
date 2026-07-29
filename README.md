@@ -13,6 +13,16 @@ sitemap.xml     Sitemap
 assets/         favicon.svg, og-image.png, apple-touch-icon.png
 ```
 
+## Cache busting — important
+
+`styles.css` and `main.js` are linked with a `?v=N` query string. GitHub Pages
+serves everything with `Cache-Control: max-age=600` and that can't be configured,
+so a returning visitor can end up with a stale stylesheet applied to fresh HTML —
+which looks completely broken.
+
+**Whenever you change `styles.css` or `main.js`, bump `?v=` in both
+`index.html` and `404.html`.** It's the only manual step in the project.
+
 ## Run it locally
 
 Open `index.html` directly, or serve it (recommended, so absolute paths work):
