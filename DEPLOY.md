@@ -1,17 +1,29 @@
-# Launching tomointeractive.com
+# Deployment — tomointeractive.com
 
-## Where the domain stands today (checked 29 Jul 2026)
+## ✅ Live since 29 July 2026
 
 | Thing | Current value |
 |---|---|
-| Nameservers | `nse1–nse4.squarespacedns.com` — **DNS is managed by Squarespace** |
-| A records | `198.185.159.144/.145`, `198.49.23.144/.145` — Squarespace's servers |
-| `www` | CNAME → `ext-sq.squarespace.com` |
-| What's live | A Squarespace **"Coming Soon"** holding page |
-| MX (email) | `aspmx.l.google.com` + alts — **Google Workspace** |
+| Host | **GitHub Pages**, from `tomovids/tomointeractive-website` (public) |
+| Nameservers | `nse1–nse4.squarespacedns.com` — DNS still managed by Squarespace |
+| A records (`@`) | `185.199.108–111.153` — GitHub Pages |
+| `www` | CNAME → `tomovids.github.io` |
+| HTTPS | Enforced. Let's Encrypt cert, `CN=tomointeractive.com` |
+| MX (email) | `aspmx.l.google.com` + alts — **Google Workspace, unchanged** |
 
-So the domain already resolves and is wired to Squarespace; it's just showing a
-placeholder. Launching = repointing it at the new site.
+Deploys happen automatically on every push to `main` via
+`.github/workflows/deploy.yml`. The root `CNAME` file binds the custom domain —
+**don't delete it**, or Pages drops back to the `github.io` URL.
+
+The rest of this file is the original setup record, kept for reference.
+
+---
+
+## Original starting point (before launch)
+
+The domain was on Squarespace serving a "Coming Soon" holding page, with A records
+pointing at `198.185.159.144/.145` and `198.49.23.144/.145`, and `www` pointing at
+`ext-sq.squarespace.com`. Launching meant repointing those at GitHub Pages.
 
 > ### ⚠️ Do not touch the MX records
 > `contact@tomointeractive.com` is delivered by Google Workspace via those MX
@@ -113,12 +125,12 @@ in your Netlify dashboard, replacing the mailto fallback.
 
 ---
 
-## After it's live — check these
+## Post-launch checklist
 
-- [ ] `https://tomointeractive.com` loads, and `www.` redirects to it
-- [ ] HTTPS padlock, no mixed-content warnings
+- [x] `https://tomointeractive.com` loads over HTTPS with a valid certificate
+- [x] `www.tomointeractive.com` resolves and serves the site
+- [x] Google Workspace MX records intact — email unaffected
+- [x] Statutory trading disclosure in the footer (company no. 17045564)
 - [ ] Send a test email to `contact@tomointeractive.com` and confirm it arrives
-- [ ] Submit the contact form
-- [ ] Paste the URL into a Slack/Discord message to check the social preview card
-- [ ] Add the Companies House number + registered address to the footer (legally
-      required for a UK limited company)
+- [ ] Submit the contact form end to end
+- [ ] Paste the URL into Slack/Discord to check the social preview card
