@@ -7,7 +7,7 @@ plain HTML, CSS and JavaScript. Any static host will serve it as-is.
 index.html      Homepage (all sections)
 404.html        Not-found page
 styles.css      All styling, incl. light/dark themes
-main.js         Theme toggle, mobile nav, scroll reveals, contact form
+main.js         Theme toggle, mobile nav, contact form
 robots.txt      Search engine directives
 sitemap.xml     Sitemap
 assets/         favicon.svg, og-image.png, apple-touch-icon.png

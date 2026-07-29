@@ -2,23 +2,14 @@
 (function () {
   'use strict';
 
-  /* ---------- Theme toggle ---------- */
   var root = document.documentElement;
-  var toggle = document.getElementById('themeToggle');
 
-  toggle.addEventListener('click', function () {
-    var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  /* ---------- Theme toggle ---------- */
+  document.getElementById('themeToggle').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('ti-theme', next); } catch (e) { /* private mode */ }
   });
-
-  /* ---------- Sticky header state ---------- */
-  var header = document.getElementById('siteHeader');
-  var onScroll = function () {
-    header.classList.toggle('scrolled', window.scrollY > 12);
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
 
   /* ---------- Mobile menu ---------- */
   var menuBtn = document.getElementById('menuBtn');
@@ -44,32 +35,10 @@
     if (e.key === 'Escape') closeMenu();
   });
 
-  /* ---------- Scroll reveal ---------- */
-  var items = document.querySelectorAll('.reveal');
-
-  items.forEach(function (el) {
-    if (el.dataset.delay) el.style.setProperty('--d', el.dataset.delay);
-  });
-
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        io.unobserve(entry.target);
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -60px' });
-
-    items.forEach(function (el) { io.observe(el); });
-  } else {
-    items.forEach(function (el) { el.classList.add('visible'); });
-  }
-
   /* ---------- Contact form ----------
-     No backend is wired up yet. Until you connect one (see README.md),
-     this opens the visitor's mail client with the message pre-filled so
-     no enquiry is silently lost. Replace ENDPOINT with a form service URL
-     (Formspree, Web3Forms, Cloudflare Pages Functions…) to post instead. */
+     No backend is wired up yet. Until one is (see README.md), this opens the
+     visitor's mail client with the message pre-filled so no enquiry is lost.
+     Set ENDPOINT to a form-service URL to POST instead. */
   var ENDPOINT = '';
   var form = document.getElementById('contactForm');
   var note = document.getElementById('formNote');
