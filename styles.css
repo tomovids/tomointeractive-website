@@ -324,10 +324,17 @@ button, input, select, textarea { font: inherit; color: inherit; }
 }
 .footer-nav a:hover { color: var(--accent); }
 .footer-bottom {
-  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+  display: flex; flex-direction: column; gap: 10px;
   border-top: 1px solid var(--border); padding-top: 24px; padding-bottom: 28px;
   font-size: .86rem; color: var(--text-faint);
 }
+/* Statutory trading disclosure — registered name, number and office address. */
+.footer-legal { max-width: 760px; line-height: 1.6; }
+.footer-legal a {
+  color: var(--text-muted); border-bottom: 1px solid var(--border-strong);
+  transition: color .2s var(--ease), border-color .2s var(--ease);
+}
+.footer-legal a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* ---------- Reveal animation ----------
    Only hide content when JS is running to un-hide it, so the page still

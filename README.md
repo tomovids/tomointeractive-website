@@ -25,11 +25,12 @@ npx serve .
 
 These are placeholders — search for `TODO` in `index.html`.
 
-1. **Company details** — the footer needs your Companies House registration
-   number and registered address. UK limited companies are legally required to
-   show the registered name, number, and registered office address on their website.
-2. **Social preview** — `assets/og-image.png` is generated and ready, but
+1. **Social preview** — `assets/og-image.png` is generated and ready, but
    regenerate it if the tagline changes.
+
+The statutory trading disclosure (registered name, company number 17045564, and
+registered office) is in the footer. If the registered office ever changes, update
+it in both the footer and the JSON-LD block in `<head>`.
 
 ## Contact form
 
