@@ -205,6 +205,32 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .about-copy .rows { margin-top: 44px; }
 .about-copy .link-arrow { margin-top: 34px; }
 
+/* ---------- Ethos ----------
+   A pull quote: large type on a short measure, attribution below a rule.
+   No quotation-mark ornament — the scale does the work. */
+/* One shared measure in rem — `ch` here would resolve against the inherited
+   17px body size, not the large quote size, and squeeze the line far too narrow. */
+.ethos { margin: 44px 0 0; --measure: 34rem; }
+.ethos blockquote { margin: 0; max-width: var(--measure); }
+.ethos blockquote p {
+  font-size: clamp(1.3rem, 2.7vw, 1.95rem);
+  font-weight: 500;
+  line-height: 1.34;
+  letter-spacing: -0.022em;
+}
+.ethos blockquote p + p { margin-top: 0.8em; color: var(--ink-2); }
+.ethos figcaption {
+  max-width: var(--measure);
+  margin-top: 40px; padding-top: 22px;
+  border-top: 1px solid var(--rule-2);
+  display: flex; flex-direction: column; gap: 4px;
+}
+.ethos-name { font-weight: 600; font-size: 1rem; }
+.ethos-role {
+  font-family: var(--mono); font-size: 11.5px; font-weight: 400;
+  letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-3);
+}
+
 /* ---------- Contact ---------- */
 .contact { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px 72px; }
 .contact-copy p { color: var(--ink-2); margin-top: 18px; max-width: 40ch; }
