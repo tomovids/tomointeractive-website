@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tomo Interactive — Apps, Games &amp; Software Development</title>
-<meta name="description" content="Tomo Interactive Ltd is a software studio building mobile apps, games and custom software. Design-led engineering, shipped end to end.">
+<meta name="description" content="Tomo Interactive Ltd is a software studio building mobile apps, games and custom software — including Measy, the budget meal planner on the App Store.">
 <meta name="theme-color" content="#faf9f6">
 <link rel="canonical" href="https://tomointeractive.com/">
 
@@ -29,7 +29,7 @@
 <!-- ?v= is a cache buster. GitHub Pages serves assets with max-age=600, so a
      browser can hold an old stylesheet against new HTML. Bump this version
      whenever styles.css or main.js changes. -->
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 
 <script type="application/ld+json">
 {
@@ -73,6 +73,7 @@
 
     <nav class="nav" id="nav" aria-label="Main">
       <a href="#services">Services</a>
+      <a href="#work">Work</a>
       <a href="#process">Process</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -103,8 +104,8 @@
       </p>
       <div class="hero-actions">
         <a class="btn" href="#contact">Start a project</a>
-        <a class="link-arrow" href="#services">
-          What we do
+        <a class="link-arrow" href="#work">
+          See Measy, our first app
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12.5 6l6 6-6 6"/></svg>
         </a>
       </div>
@@ -149,11 +150,86 @@
     </div>
   </section>
 
-  <!-- ── Process ──────────────────────────────────────────── -->
-  <section class="band band-tone" id="process">
+  <!-- ── Work ─────────────────────────────────────────────── -->
+  <section class="band band-tone" id="work">
     <div class="wrap">
       <div class="band-head">
-        <p class="label"><span class="num">02</span> — How we work</p>
+        <p class="label"><span class="num">02</span> — Our work</p>
+        <h2>Measy — dinner, sorted.</h2>
+        <p class="lede">
+          Our first consumer app, live on the App Store. Tell it what you like, where you
+          shop and what you want to spend; it plans a week of dinners and writes the
+          shopping list — all within budget.
+        </p>
+      </div>
+
+      <div class="showcase">
+        <div class="showcase-copy">
+          <div class="showcase-title">
+            <img class="showcase-icon" src="assets/measy/icon.png" alt="" width="64" height="64">
+            <div>
+              <h3>Measy: Meal Planner</h3>
+              <p class="showcase-meta">iOS · Food &amp; Drink · Free to download</p>
+            </div>
+          </div>
+
+          <dl class="rows">
+            <div class="row">
+              <dt>A week of dinners from £25</dt>
+              <dd>
+                481 real recipes with photos, priced against the supermarket you actually
+                use — Aldi to Waitrose, plus EU and US stores — so the plan total is a
+                number you can trust at the till.
+              </dd>
+            </div>
+            <div class="row">
+              <dt>Planned around your life</dt>
+              <dd>
+                Allergies, dislikes, cooking days, kitchen kit and household size all
+                shape the week. Swap any dinner in a tap; the list updates itself.
+              </dd>
+            </div>
+            <div class="row">
+              <dt>Streaks and community</dt>
+              <dd>
+                Mark tonight cooked to keep a streak going, share your own recipes, and
+                ask other Measy cooks what they'd make.
+              </dd>
+            </div>
+          </dl>
+
+          <div class="showcase-actions">
+            <a class="store-badge" href="https://apps.apple.com/gb/app/measy-meal-planner/id6802489151"
+               target="_blank" rel="noopener noreferrer" aria-label="Download Measy on the App Store">
+              <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+              <span><small>Download on the</small>App Store</span>
+            </a>
+            <a class="link-arrow" href="https://getmeasy.com" target="_blank" rel="noopener noreferrer">
+              getmeasy.com
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12.5 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+
+          <p class="showcase-note">
+            Designed, built and shipped end to end by the studio — Expo &amp; React Native,
+            Supabase, RevenueCat. Charted in the UK Food &amp; Drink top 200 on launch day.
+          </p>
+        </div>
+
+        <div class="showcase-shots" aria-label="Measy app screenshots">
+          <img src="assets/measy/screen-1.jpg" alt="Measy plan screen: a week of dinners with the total against the budget" width="750" height="1500" loading="lazy">
+          <img src="assets/measy/screen-2.jpg" alt="Measy explore screen: dishes with photos and prices" width="750" height="1500" loading="lazy">
+          <img src="assets/measy/screen-3.jpg" alt="Measy recipe screen: ingredients, steps and a tailored serving" width="750" height="1500" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Process ──────────────────────────────────────────── -->
+  <section class="band" id="process">
+    <div class="wrap">
+      <div class="band-head">
+        <p class="label"><span class="num">03</span> — How we work</p>
         <h2>A process without the theatre.</h2>
         <p class="lede">
           Short feedback loops, working software early, and no surprises at the end.
@@ -186,10 +262,10 @@
   </section>
 
   <!-- ── About ────────────────────────────────────────────── -->
-  <section class="band" id="about">
+  <section class="band band-tone" id="about">
     <div class="wrap about">
       <div class="band-head">
-        <p class="label"><span class="num">03</span> — About the studio</p>
+        <p class="label"><span class="num">04</span> — About the studio</p>
         <h2>Small team. Serious craft.</h2>
       </div>
 
@@ -227,9 +303,9 @@
   </section>
 
   <!-- ── Ethos ────────────────────────────────────────────── -->
-  <section class="band band-tone" id="ethos">
+  <section class="band" id="ethos">
     <div class="wrap">
-      <p class="label"><span class="num">04</span> — Ethos</p>
+      <p class="label"><span class="num">05</span> — Ethos</p>
 
       <figure class="ethos">
         <blockquote>
@@ -252,10 +328,10 @@
   </section>
 
   <!-- ── Contact ──────────────────────────────────────────── -->
-  <section class="band" id="contact">
+  <section class="band band-tone" id="contact">
     <div class="wrap contact">
       <div class="contact-copy">
-        <p class="label"><span class="num">05</span> — Get in touch</p>
+        <p class="label"><span class="num">06</span> — Get in touch</p>
         <h2>Tell us what you're building.</h2>
         <p>
           Send over the idea, the rough shape of it, or just a question. We reply to
@@ -309,6 +385,7 @@
         <div>
           <h3>Studio</h3>
           <a href="#services">Services</a>
+          <a href="#work">Work</a>
           <a href="#process">Process</a>
           <a href="#about">About</a>
         </div>
@@ -333,6 +410,6 @@
   </div>
 </footer>
 
-<script src="main.js?v=3"></script>
+<script src="main.js?v=4"></script>
 </body>
 </html>
